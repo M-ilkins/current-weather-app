@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loading-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.spinner {
+    animation: spin 2s linear infinite;
+    height: 200px;
+    width: 200px;
+    border: 20px solid grey;
+    border-top: 20px solid rgb(95, 138, 246);
+    border-radius: 50%;
+}
+
+@keyframes spin {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.weather-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(66, 156, 201);
+}
+
+.weather-card {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 80%;
+    border-radius: 10px;
+    border: 10px solid white;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.522);
+}
