@@ -6,9 +6,13 @@ function getLocationCoordinates() {
         let latitude = pos.coords.latitude;
         let longitude = pos.coords.longitude;
         getWeatherDataFromApi(latitude, longitude);
+    }, (error) => {
+        document.querySelector('.error-page').textContent = 'Failed to access location';
+        document.querySelector('.spinner').style.display = 'none';
     });
   } else {
-    document.body.innerHTML = "Geolocation is not supported by this browser.";
+    document.querySelector('.spinner').style.display = 'none';
+    document.querySelector('.error-page').innerHTML = "Geolocation is not supported by this browser.";
   }
 };
 

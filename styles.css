@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 32px;
+}
+
 .loading-page {
     display: flex;
     justify-content: center;
@@ -26,6 +30,10 @@
     100%{transform: rotate(360deg);}
 }
 
+.error-page {
+    text-align: center;
+}
+
 .weather-info-container {
     display: flex;
     justify-content: center;
@@ -33,18 +41,24 @@
     width: 100vw;
     height: 100vh;
     background-color: rgb(66, 156, 201);
+    overflow: scroll;
 }
 
 .weather-card {
     text-align: center;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: space-evenly;
     flex-direction: column;
-    width: 50%;
-    height: 80%;
+    min-width: 320px;
+    overflow: scroll;
+    padding: 2%;
     border-radius: 10px;
     border: 10px solid white;
     color: white;
     background-color: rgba(0, 0, 0, 0.522);
+}
+
+.weather-card [id] {
+    margin-bottom: 10%;
 }
