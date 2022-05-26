@@ -8,6 +8,10 @@ html {
     font-size: 32px;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 .loading-page {
     display: flex;
     justify-content: center;
@@ -21,7 +25,7 @@ html {
     height: 200px;
     width: 200px;
     border: 20px solid grey;
-    border-top: 20px solid rgb(95, 138, 246);
+    border-top: 20px solid rgb(66, 156, 201);
     border-radius: 50%;
 }
 
