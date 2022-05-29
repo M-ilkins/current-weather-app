@@ -40,6 +40,7 @@ function getWeatherDataFromApi(latitude, longitude){
 
 function displayWeatherInfo(weatherObject){
     document.querySelector('.loading-page').style.display = 'none';
+    document.querySelector('.weather-info-container').style.display = 'flex';
 
     fetch(`http://openweathermap.org/img/wn/${weatherObject.icon}@2x.png`)
     .then((imgUrl) => {
