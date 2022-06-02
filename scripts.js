@@ -16,7 +16,7 @@ function getLocationCoordinates() {
 };
 
 function getWeatherDataFromApi(latitude, longitude){
-    const apiKey = process.env.API_TOKEN;
+    const apiKey = process.env.API_KEY;
     const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?';
     const apiUrlParams = `lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
     fetch(apiUrl+apiUrlParams).then((data) => {
