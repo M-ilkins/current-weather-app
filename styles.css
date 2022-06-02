@@ -43,7 +43,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     background: linear-gradient(90deg, rgba(16,58,233,1) 0%, rgba(78,123,221,1) 50%, rgba(101,226,129,1) 100%);
     overflow: scroll;
 }
